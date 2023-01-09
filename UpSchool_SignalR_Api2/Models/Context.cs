@@ -9,6 +9,8 @@ namespace UpSchool_SignalR_Api2.Models
 
         }
         public DbSet<Electric> Electrics { get; set; }
-        
+
+
+
     }
 }

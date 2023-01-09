@@ -13,7 +13,7 @@ namespace UpSchool_SignalR_Api2.Hubs
         }
         public async Task GetElectric()
         {
-            await Clients.All.SendAsync("ReceiveElectricList", "Elektrik verilerini al");
+            await Clients.All.SendAsync("ReceiveElectricList", _service.GetElectricChartList());
         }
     }
 }

@@ -24,7 +24,7 @@ namespace UpSchool_SignalR_Api2.Controllers
         {
             await _service.SaveElectric(electric);
             IQueryable<Electric> electricList = _service.GetList();
-            return Ok(electricList);
+            return Ok(_service.GetElectricChartList());
         }
         //veritabanına her şehir için değişen random elektrik  tüketim değerlerini atayacak
         [HttpGet]
